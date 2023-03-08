@@ -3,8 +3,8 @@
 
 | Deliverable | Due Date              |
 |---------------|----------------------------------------------------------------------------|
-| Briefing (and link to slides on team site)   | Wednesday, March 9st at 1:00PM EST     |
-| [Team Member Assessment](https://forms.gle/q596G7Lucn7vzVov6)  | Friday, March 11th at 11:59PM EST |
+| Briefing (and link to slides on team site)   | Friday, March 17th at 1:00PM EST     |
+| [Team Member Assessment](https://forms.gle/Rcg1j11pwGrZT2up7)  | Monday, March 20th at 11:59PM EST |
 
 ## Introduction
 
@@ -29,9 +29,9 @@ Here’s how they fit together. Modules 1 and 2 cover object detection algorithm
 
 ## Submission and Grading
 
-Lab 4 will require a briefing, but **no report**. You will deliver an 8-minute briefing presentation (plus 3 minutes Q&A) together with your team, upload the briefing slides to your github pages website, and submit a [team member assessment form](https://forms.gle/q596G7Lucn7vzVov6). See the deliverables chart at the top of this page for due dates and times.
+Lab 4 will require a briefing, but **no report**. You will deliver an 8-minute briefing presentation (plus 3 minutes Q&A) together with your team, upload the briefing slides to your github pages website, and submit a [team member assessment form](https://forms.gle/Rcg1j11pwGrZT2up7). See the deliverables chart at the top of this page for due dates and times.
 
-You can view the rubric for the [briefing](https://docs.google.com/document/d/1NmqQP7n1omI9bIshF1Y-MP70gfDkgEeoMjpWv8hjfsY/edit?usp=sharing) for more details on specific grading criteria. You will receive a grade out of 10 points. Your final lab grade will also be out of 10 points, based on the following weights:
+You can view the rubric for the [briefing](https://docs.google.com/document/d/1dGBsSiT4_HnIwpF9Xghsw_nbOH6Ebm37/edit?usp=sharing&ouid=115663859078057501704&rtpof=true&sd=true) for more details on specific grading criteria. You will receive a grade out of 10 points. Your final lab grade will also be out of 10 points, based on the following weights:
 
 | Deliverable Grade | Weighting              |
 |---------------|----------------------------------------------------------------------------|
@@ -257,7 +257,7 @@ You are required to demonstrate successful line following for the orange line. I
 ### General Suggestions
 1. Verify your perception system independently after implementing modules 1 and 3 before trying to run it together with the controller. You should be able to move the cone around on the floor and accurately determine its position relative to the car using just the camera. Make sure to visualize the published Marker representing the cone in RViz. The rviz cone should appear where the real cone does.
 2. You can verify your parking controller independently as well by running `parking_sim.launch` and placing cones in RViz using the PublishPoint tool. In simulation, your car may observe that a cone is behind it or off to the side; in practice, the car will only know the cone's location when it is in the camera frame. You should design a parking controller that works in all cases!
-3. When both perception and control work independently, run them together on the car using `parking_deployment.launch`. Congratulations are in order when you can park successfully.
+3. When both perception and control work independently, run them together on the car using `parking_deploy.launch`. Congratulations are in order when you can park successfully.
 5. Modify module 1 such that your robot can follow a line instead of a cone -- this should require minimal modification to your parking code! Some suggestions are in the module 1 section below.
 6. Improve your line following controller to see how fast you can navigate a circular track.
 7. Optionally: extend your line follower to follow the white lines of the track around Johnson! This will require a few tweaks to your vision algorithm; with many lines in parallel circling the track, your car will become confused about which one to follow without additional guidance.
